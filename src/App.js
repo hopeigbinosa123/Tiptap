@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+/**
+ * The `App` function returns a React component that renders a `Tiptap` component within a `div` with a
+ * blueviolet background color.
+ * @returns The `App` component is being returned, which contains a `div` element with a blueviolet
+ * background color and the `Tiptap` component inside it.
+ */
+import React from 'react';
+import Tiptap from './components/Tiptap';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{backgroundColor:'blueviolet'}}>
+      <Tiptap />
     </div>
   );
 }
